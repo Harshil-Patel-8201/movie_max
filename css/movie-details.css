@@ -1,0 +1,301 @@
+/* ---- Team: Movie Max ----- */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  margin: 0%;
+}
+
+/* ---- Desktop ----- */
+.movie-details-full {
+  margin: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.movie-details-full .details {
+  width: 100%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
+}
+
+.details h5 {
+  font-size: 15px;
+  color: #7d7d7d;
+  margin: 0%;
+  font-weight: 400;
+}
+
+.details h1 {
+  font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.details h3 {
+  color: #f2bb23;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+
+.details h2 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #757575;
+}
+
+.details .buttons-row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.details .buttons-row a {
+  text-decoration: none;
+  width: 50%;
+}
+
+.details .buttons-row a h4 {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #fbb340 0%, #f9e833 100%);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.details .buttons-row h4{
+  width: 50%;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #fbb340 0%, #f9e833 100%);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.details .other-details {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.other-details .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.other-details .col .top-details {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: baseline;
+  margin: 0%;
+}
+
+.other-details .col .top-details h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  margin: 0%;
+}
+
+.other-details .col .top-details p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #757575;
+  margin-right: 3px;
+  margin-bottom: 0%;
+}
+
+.other-details h5 {
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
+  margin: 0%;
+}
+
+.movie-details-full .movie-image {
+  width: 100%;
+  display: flex;
+  padding: 2%;
+}
+
+.movie-image img {
+  width: 80%;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* ---- Tablet ----- */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .details h5 {
+    font-size: 12px;
+  }
+
+  .details h1 {
+    font-size: 28px;
+  }
+
+  .details h3 {
+    font-size: 15px;
+  }
+
+  .details h2 {
+    font-size: 12px;
+  }
+
+  .details .buttons-row {
+    gap: 18px;
+  }
+
+   .details .buttons-row h4 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 13px;
+  }
+
+  .details .buttons-row a h4{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 13px;
+  }
+
+  .details .other-details {
+    margin-top: 3%;
+  }
+
+  .other-details .col .top-details h1 {
+    font-size: 20px;
+  }
+
+  .other-details .col .top-details p {
+    font-size: 12px;
+  }
+
+  .other-details h5 {
+    font-size: 13px;
+  }
+
+  .movie-details-full .movie-image {
+    width: 100%;
+    display: flex;
+    padding: 2%;
+  }
+
+  .movie-image img {
+    width: 90%;
+    margin-top: 5%;
+  }
+}
+
+/* ---- Mobile ----- */
+@media only screen and (max-width: 767px) {
+  .movie-details-full {
+    margin: 0%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .movie-details-full .details {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px;
+  }
+
+  .details h5 {
+    font-size: 14px;
+  }
+
+  .details h1 {
+    font-size: 28px;
+  }
+
+  .details h3 {
+    font-size: 15px;
+  }
+
+  .details h2 {
+    font-size: 12px;
+  }
+
+  .details .buttons-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .details .buttons-row h4 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 12px;
+  }
+
+  .details .buttons-row a h4 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 12px;
+  }
+
+  .details .other-details {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .other-details .col .top-details h1 {
+    font-size: 18px;
+  }
+
+  .other-details .col .top-details p {
+    font-size: 12px;
+  }
+
+  .other-details h5 {
+    font-size: 12px;
+  }
+
+  .movie-details-full .movie-image {
+    width: 100%;
+    padding: 0%;
+  }
+
+  .movie-image img {
+    width: 100%;
+    object-fit: cover;
+    margin: 0%;
+    border-radius: 0px;
+  }
+}

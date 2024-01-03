@@ -1,0 +1,143 @@
+<!-- Team: Movie Max -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head Element-->
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Title of the page -->
+    <title>Movie Max</title>
+    <!-- Favicon link -->
+    <link
+      class="favicon-image"
+      rel="icon"
+      type="image/x-icon"
+      href="../img/favicon/favicon.ico"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/movie-details.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- nav Element-->
+      <nav>
+        <!-- Logo -->
+        <a href="index.html">
+          <img src="../img/logo/logo.png" alt="logo" />
+        </a>
+        <!-- Navigation links -->
+        <ul class="nav-options">
+          <li>
+            <a class="nav-selected" href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="service.html">Service</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="aboutUs.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main Element-->
+    <main>
+      <!-- Movie Details Section -->
+      <div class="movie-details-full">
+        <!-- Details Column -->
+        <div class="details">
+          <!-- Movie Details -->
+          <h5 id="movie-releaseDate"></h5>
+          <h5 id="movie-movieType"></h5>
+          <h1 id="movie-title"></h1>
+          <h3 id="movie-rating"></h3>
+          <h2 id="movie-description"></h2>
+
+          <!-- Buttons Row -->
+          <div class="buttons-row">
+            <a id="movie-trailerURL" target="_blank">
+              <h4>Watch Trailar</h4>
+            </a>
+            <h4>Save Movie</h4>
+          </div>
+
+          <!-- Other Details Column -->
+          <div class="other-details">
+            <div class="col">
+              <!-- Top Details -->
+              <div class="top-details">
+                <h1>1</h1>
+                <p>hr</p>
+                <h1>3</h1>
+                <p>min</p>
+              </div>
+              <h5>Total Hours</h5>
+            </div>
+            <div class="col">
+              <div class="top-details">
+                <h1>98</h1>
+                <p>%</p>
+              </div>
+              <h5>Popularity</h5>
+            </div>
+            <div class="col">
+              <div class="top-details">
+                <h1>8.9</h1>
+                <p>/10</p>
+              </div>
+              <h5>IMDB Rating</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie Image Column -->
+        <div class="movie-image">
+          <img id="movie-movieImage" alt="movie image" />
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript Section -->
+    <script>
+      // Function to get and display movie details
+      function getMovieDetails() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const movieName = urlParams.get("title");
+        const movieImageUrl = urlParams.get("movieImage");
+        const movieDescription = urlParams.get("desciption");
+        const movieReleaseDate = urlParams.get("releaseDate");
+        const movieType = urlParams.get("movieType");
+        const movieRating = urlParams.get("rating");
+        const movieTrailerURL = urlParams.get("trailerURL");
+
+        // Update HTML elements with movie details
+        document.getElementById("movie-title").innerText = movieName;
+        document.getElementById("movie-movieImage").src = movieImageUrl;
+        document.getElementById("movie-description").innerText =
+          movieDescription;
+        document.getElementById("movie-releaseDate").innerText =
+          movieReleaseDate;
+        document.getElementById("movie-movieType").innerText = movieType;
+        document.getElementById(
+          "movie-rating"
+        ).innerText = `⭐️ ${movieRating}`;
+        document.getElementById("movie-trailerURL").href = movieTrailerURL;
+      }
+
+      // Call the function to get movie details
+      getMovieDetails();
+    </script>
+  </body>
+</html>

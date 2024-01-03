@@ -1,0 +1,716 @@
+/* ---- Team: Movie Max ---- */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  margin: 0%;
+}
+
+/* ---- Desktop ----- */
+
+/* Banner */
+.gradient_container {
+  position: relative;
+  height: 600px;
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.gradient-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffff00, #00000042, #000000);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay-text {
+  bottom: 0;
+  left: 0;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-text h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0%;
+}
+
+.overlay-text .sub-text {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+.overlay-text .sub-text-small {
+  margin: 0%;
+  color: #7d7d7d;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.overlay-text .sub-rating {
+  font-size: 12px;
+  color: #dcaa21;
+  font-weight: 500;
+}
+
+/* Age selection */
+.age-slection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dae2ff;
+  padding: 15px;
+}
+
+.age-slection h1 {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.age-slection input {
+  border: solid 2px #ffcb3d;
+  padding: 5px;
+  margin: 20px;
+}
+
+.age-slection p {
+  background-color: #3655c6;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* TOp 10 movies */
+.top-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.top-10 h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.top-10 p {
+  font-size: 15px;
+  color: #717171;
+  margin: 0%;
+}
+
+.movie-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.movie-section a {
+  text-decoration: none;
+}
+
+.series-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.movie-card {
+  min-width: 22%;
+  max-width: 265px;
+  position: relative;
+  border: solid 1.5px #89a3ff;
+  margin: 0%;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: start;
+  text-align: left;
+  padding-bottom: 10px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.movie-card .name {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.movie-card .year {
+  font-size: 15px;
+  color: #777777;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.movie-card .rating {
+  color: #fec013;
+  font-size: 13px;
+  margin-left: 8px;
+}
+
+/* Newsletter*/
+.top-10 .subscribe {
+  background-color: #3655c6;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* Testimonials */
+.testimonial {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #e5eafe;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.testimonial h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.testimonial img {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.testimonial h3 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.testimonial p {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  color: #7f7f7f;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.testimonial .stars{
+  font-size: 20px;
+  font-style: normal;
+  color: #3655c6;
+}
+
+/* Recent movie*/
+.recent-movie {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.recent-movie h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.recent-movie-list {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recent-movie-list img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+/* ---- Tablet ----- */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .gradient_container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+
+  /* banner */
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .gradient-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff00, #00000042, #000000);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .overlay-text {
+    bottom: 0;
+    left: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overlay-text h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0%;
+  }
+
+  .overlay-text .sub-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #ffffff;
+  }
+
+  .overlay-text .sub-text-small {
+    margin: 0%;
+    color: #7d7d7d;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .overlay-text .sub-rating {
+    font-size: 10px;
+    color: #ffcb3d;
+    font-weight: 500;
+  }
+
+  /* age selection */
+  .age-slection {
+    padding: 0px;
+  }
+
+  .age-slection h1 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .age-slection p {
+    font-size: 13px;
+  }
+
+  /* top 10 movies */
+  .top-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+
+  .top-10 h1 {
+    font-size: 23px;
+    font-weight: 400;
+  }
+
+  .top-10 p {
+    font-size: 13px;
+    color: #717171;
+    margin: 0%;
+  }
+
+  .movie-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .movie-card {
+    width: 30%;
+    position: relative;
+    border: solid 1.5px #9b9b9b;
+    margin: 0%;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: start;
+    text-align: left;
+    padding-bottom: 10px;
+    margin: 8px;
+  }
+
+  .movie-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .movie-card .name {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+
+  .movie-card .year {
+    font-size: 10px;
+    color: #777777;
+    font-weight: 400;
+    margin-left: 5px;
+  }
+
+  .movie-card p {
+    color: #ffc21b;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+
+  /* testimotial */
+  .testimonial {
+    padding-bottom: 30px;
+  }
+
+  .testimonial h2 {
+    font-size: 23px;
+    font-weight: 400;
+  }
+
+  .testimonial img {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+  }
+
+  .testimonial h3 {
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+  .testimonial p {
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+    color: #7f7f7f;
+    font-size: 12px;
+  }
+
+  /* recent movie */
+  .recent-movie {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .recent-movie h2 {
+    font-size: 23px;
+    font-weight: 400;
+  }
+
+  .recent-movie-list {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .recent-movie-list img {
+    width: 180px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 8px;
+  }
+}
+
+/* ---- Mobile ----- */
+@media only screen and (max-width: 767px) {
+  /* banner */
+  .gradient_container {
+    position: relative;
+    height: 230px;
+    width: 100%;
+  }
+
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .gradient-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff00, #00000042, #000000);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .overlay-text {
+    bottom: 0;
+    left: 0;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overlay-text h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0%;
+  }
+
+  .overlay-text .sub-text {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: #ffffff;
+  }
+
+  .overlay-text .sub-text-small {
+    margin: 0%;
+    color: #7d7d7d;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .overlay-text .sub-rating {
+    font-size: 8px;
+    color: #ffcb3d;
+    font-weight: 500;
+  }
+
+  /* age selection*/
+  .age-slection {
+    display: flex;
+    flex-direction: column;
+    background-color: #abbdff;
+    padding: 0px;
+  }
+
+  .age-slection h1 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .age-slection input {
+    border: solid 2px #ffcb3d;
+    padding: 5px;
+    margin: 0%;
+  }
+
+  .age-slection p {
+    font-size: 12px;
+    background-color: #3655c6;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-weight: 400;
+  }
+
+  /* top movies */
+  .top-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .top-10 h1 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .top-10 p {
+    font-size: 10px;
+    color: #717171;
+    margin: 0%;
+  }
+
+  .top-10 .subscribe {
+    margin-top: 10px;
+  }
+
+  .movie-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+  }
+
+  .movie-card {
+    width: 45%;
+    position: relative;
+    border: solid 1.5px #9b9b9b;
+    margin: 0%;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: start;
+    text-align: left;
+    padding-bottom: 10px;
+    margin: 5px;
+  }
+
+  .movie-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+
+  .movie-card .name {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+
+  .movie-card .year {
+    font-size: 10px;
+    color: #777777;
+    font-weight: 400;
+    margin-left: 8px;
+  }
+
+  .movie-card p {
+    color: #ffc21b;
+    font-size: 10px;
+    margin-left: 8px;
+  }
+
+  .movie-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* testimonials */
+  .testimonial {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #e5eafe;
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .testimonial h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .testimonial img {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+  }
+
+  .testimonial h3 {
+    font-size: 15px;
+    font-weight: 200;
+  }
+
+  .testimonial p {
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: center;
+    color: #7f7f7f;
+    font-size: 10px;
+  }
+
+  /* recent */
+  .recent-movie {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .recent-movie h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .recent-movie-list {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .recent-movie-list img {
+    width: 180px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 8px;
+  }
+}

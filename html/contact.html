@@ -1,0 +1,211 @@
+<!-- Team: Movie Max -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head Element-->
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Title of the page -->
+    <title>Contact Us</title>
+    <!-- Favicon -->
+    <link
+      class="favicon-image"
+      rel="icon"
+      type="image/x-icon"
+      href="../img/favicon/favicon.ico"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- nav Element-->
+      <nav>
+        <!-- Logo -->
+        <a href="index.html">
+          <img src="../img/logo/logo.png" alt="logo" />
+        </a>
+        <!-- Navigation links -->
+        <ul class="nav-options">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="service.html">Service</a>
+          </li>
+          <li>
+            <a class="nav-selected" href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="aboutUs.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main Element-->
+    <main class="contact">
+      <!-- Heading Text -->
+      <div class="heading-text">
+        <h1>Reach out to us</h1>
+        <h5>
+          If you need help with your booking, get in touch today by filling in
+          your details below.
+        </h5>
+      </div>
+      <!-- Form Section -->
+      <form class="form-filling">
+        <div class="form-row">
+          <p>Name</p>
+          <input
+            type="text"
+            class="form-input"
+            placeholder="Enter your name"
+            minlength="5"
+            maxlength="10"
+            required
+          />
+        </div>
+        <div class="form-row">
+          <p>Email Address</p>
+          <input
+            type="email"
+            class="form-input"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-row">
+          <p>Phone Number</p>
+          <input
+            type="tel"
+            class="form-input"
+            placeholder="(###)###-####"
+            required
+          />
+        </div>
+        <div class="form-row">
+          <p>Subject</p>
+          <select name="selection" id="selection">
+            <option>Inquiry</option>
+            <option>Meeting</option>
+            <option>Q&A</option>
+            <option>Help</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <p style="width: 130px">Gender</p>
+          <label>
+            <input type="radio" name="gender" value="male" required />
+            Male
+          </label>
+
+          <label>
+            <input type="radio" name="gender" value="female" required />
+            Female
+          </label>
+        </div>
+        <div class="form-row">
+          <p>Message</p>
+          <textarea rows="10" class="form-input" required> </textarea>
+        </div>
+        <input class="send" type="submit" value="Send" />
+      </form>
+      <!-- Customer Support Section -->
+      <div class="heading-text" style="margin-top: 50px">
+        <h1>Customer Support</h1>
+        <h5>
+          For technical support or assistance with any issues you may be
+          experiencing on our website, please email
+          <a
+            href="mailto:help@moviemax.com"
+            style="color: #3655c6; text-decoration: underline; cursor: pointer"
+            >help@moviemax.com</a
+          >
+          or visit our
+          <a style="color: #3655c6; text-decoration: underline; cursor: pointer"
+            >help</a
+          >. <br /><br />Also you can take in-person meeting with us at Lambton
+          College, Toronto. <br />We are available from Monday to Friday 9:00 AM
+          to 6:00 PM.
+        </h5>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.980985119168!2d-79.33868912417239!3d43.77325354465841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3bca1a3f78f%3A0x815365ed6c3b957e!2sLambton%20College%20In%20Toronto!5e0!3m2!1sen!2sca!4v1701560139309!5m2!1sen!2sca"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer Element-->
+    <footer>
+      <!-- Footer Details -->
+      <div class="footer-details">
+        <!-- Company Content -->
+        <div class="content">
+          <h2>Company</h2>
+          <div class="underline"></div>
+          <ul>
+            <li>About us</li>
+            <li>Our service</li>
+            <li>Privacy Policy</li>
+            <li>Program</li>
+          </ul>
+        </div>
+        <!-- Pick Your Movie Content -->
+        <div class="content">
+          <h2>Pick Your Movie</h2>
+          <div class="underline"></div>
+          <ul>
+            <li>Action</li>
+            <li>Comedy</li>
+            <li>Drama</li>
+            <li>Science Fiction</li>
+            <li>Horror</li>
+            <li>Romance</li>
+            <li>Adventure</li>
+            <li>Documentary</li>
+          </ul>
+        </div>
+        <!-- Location Content -->
+        <div class="content">
+          <h2>Location</h2>
+          <div class="underline"></div>
+          <ul>
+            <li>India</li>
+            <li>Canada</li>
+            <li>USA</li>
+            <li>Dubai</li>
+          </ul>
+        </div>
+        <!-- Follow Us Content -->
+        <div class="content">
+          <h2>Follow Us</h2>
+          <div class="underline"></div>
+          <ul>
+            <li>Whatsapp</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copy Rights -->
+      <p class="copy-rights">&copy; 2023. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

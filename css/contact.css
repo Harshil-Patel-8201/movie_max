@@ -1,0 +1,233 @@
+/* ---- Team: Movie Max ----- */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  margin: 0%;
+}
+
+/* ---- Desktop ----- */
+
+.contact {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-text {
+  text-align: left;
+  margin: 3%;
+}
+
+.heading-text h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3655c6;
+}
+
+.heading-text h5 {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.form-filling {
+  width: 100%;
+  box-shadow: 8px 8px 20px 20px #ececec;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.form-filling p {
+  width: 20%;
+  font-size: 15px;
+  color: #636363;
+  font-weight: 400;
+}
+
+.form-filling input {
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 1px solid #636363;
+  border-radius: 5px;
+}
+
+.form-filling select {
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 1px solid #636363;
+  border-radius: 5px;
+}
+
+.form-filling label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-filling textarea {
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 1px solid #636363;
+  border-radius: 5px;
+}
+
+.form-filling .send {
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #3655c6;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 400;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- Tablet ----- */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact {
+    width: 100%;
+  }
+
+  .heading-text h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3655c6;
+  }
+
+  .form-filling {
+    padding: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .heading-text h5 {
+    font-size: 13px;
+  }
+
+  .form-filling p {
+    font-size: 13px;
+  }
+
+  .form-filling input {
+    width: 100%;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #636363;
+    border-radius: 5px;
+  }
+
+  .form-filling textarea {
+    width: 100%;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #636363;
+    border-radius: 5px;
+  }
+
+  .form-filling .send {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #3655c6;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 400;
+  }
+
+  .map {
+    height: 400px;
+  }
+}
+
+/* ---- Mobile ----- */
+@media only screen and (max-width: 767px) {
+  .contact {
+    width: auto;
+  }
+
+  .heading-text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .heading-text h1 {
+    font-size: 18px;
+  }
+
+  .heading-text h5 {
+    font-size: 12px;
+  }
+
+  .form-filling {
+    width: 100%;
+    padding: 0%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-row p {
+    width: 100%;
+    font-size: 15px;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .form-row input {
+    width: auto;
+    padding: 15px;
+  }
+
+  .form-row select {
+    width: auto;
+    padding: 15px;
+  }
+
+  .form-row textarea {
+    width: auto;
+    padding: 15px;
+  }
+
+  .map {
+    height: 300px;
+  }
+}
